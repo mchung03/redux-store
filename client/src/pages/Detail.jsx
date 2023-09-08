@@ -20,7 +20,7 @@ function Detail() {
   const { id } = useParams();
   const dispatch = useDispatch();
 
-  // const [currentProduct, setCurrentProduct] = useState({});
+  const [currentProduct, setCurrentProduct] = useState({});
 
   const { loading, data } = useQuery(QUERY_PRODUCTS);
 
