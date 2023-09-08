@@ -10,10 +10,8 @@ import { idbPromise } from '../../utils/helpers';
 import spinner from '../../assets/spinner.gif';
 
 function ProductList() {
-  // const [state, dispatch] = useStoreContext();
   const dispatch = useDispatch();
 
-  // const { currentCategory } = state;
   const { currentCategory } = useSelector((state) => state);
   const products = useSelector((state) => state.products);
 

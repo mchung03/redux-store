@@ -10,14 +10,12 @@ import { Provider } from 'react-redux';
 import store from './utils/store';
 
 import Nav from './components/Nav';
-// import { StoreProvider } from './utils/GlobalState';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
 });
 
 const authLink = setContext((_, { headers }) => {
-  // const token = localStorage.getItem('id_token');
   const token = store.getState().authToken;
   return {
     headers: {
